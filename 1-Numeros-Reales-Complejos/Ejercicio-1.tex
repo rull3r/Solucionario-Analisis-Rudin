@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=i4aToAEACAAJ}{Principios de Análisis Matemático - Walter Rudin}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+	\problema{ }\label{pro:1}
+	Si $r$ es racional ($r\neq0$) y $x$ es irracional, demuestre que $r + x$ y $rx$ son irracionales.
+	\solution 
+	Procederemos ambas demostraciones por reducción al absurdo. Supongamos que $r+x$ es racional, esto es $r+x=\frac{a}{b}$ para dos enteros $a$ y $b$, $r$ es racional por lo tanto $\frac{c}{d}+x=\frac{a}{b}\Rightarrow x=\frac{a}{b}-\frac{c}{d}=\frac{ad-bc}{bd}$ lo cual es un absurdo porque $x$ es un irracional, de manera análoga supondremos que $rx$ es racional, esto es $rx=\frac{a}{b}$, con $r$ siendo racional, $\frac{c}{d}x=\frac{a}{b}\Rightarrow x=\frac{ad}{bc}$ lo cual es un absurdo ya que $x$ es irracional \QEPD
+	
+\end{document}
