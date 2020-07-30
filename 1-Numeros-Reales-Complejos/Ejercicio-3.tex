@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=i4aToAEACAAJ}{Principios de Análisis Matemático - Walter Rudin}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+	\problema{ }\label{pro:3}
+	Demostrar la Proposición 1.15 del \href{https://books.google.co.ve/books?id=i4aToAEACAAJ}{Libro}.
+	Los axiomas para la multiplicación implican las proposiciones siguientes:
+	
+	\begin{enumerate}[(a)]
+		\item Si $x \neq 0$ y $xy=xz$, entonces $y=z$
+		\item Si $x \neq 0$ y $xy=x$, entonces $y=1$
+		\item Si $x \neq 0$ y $xy=1$, entonces $y=\frac{1}{x}$
+		\item Si $x \neq 0$ entonces $\dfrac{1}{\frac{1}{x}}=x$
+	\end{enumerate}
+
+	\solution 
+	
+	\begin{enumerate}[(a)]
+		\item Usando la propiedad distributiva de la multiplicación $xy-xz=0$ $\Rightarrow$ $x(y-z)=0$ y como $x\neq0$ tenemos que $y=z$ \QEPD
+		
+		\item Usando la propiedad distributiva de la multiplicación $xy-x=0$ $\Rightarrow$ $x(y-1)=0$ y como $x\neq0$ tenemos que $y=1$ \QEPD 
+		
+		\item Debido a los axiomas de la multiplicación en los números reales si $x \neq 0$ entonces existe $\frac{1}{x}$ tal que $\frac{1}{x}x=1$ multiplicando por $\frac{1}{x}$ ambos miembros de la ecuación $xy=1$ $\Rightarrow$ $\frac{1}{x}xy=\frac{1}{x}$ tenemos que $y=\frac{1}{x}$ \QEPD
+		
+		\item Dado (a)  $\frac{1}{x}\dfrac{1}{\frac{1}{x}}=\frac{1}{x}x$ tenemos que $\dfrac{1}{\frac{1}{x}}=x$ \QEPD
+		
+	\end{enumerate}
+	
+	
+\end{document}
